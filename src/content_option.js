@@ -1,3 +1,4 @@
+import fondo from './fondo.png';
 
 const SERVICE_ID = process.env.SERVICE_ID;
 const TEMPLATE_ID = process.env.TEMPLATE_ID;
@@ -21,7 +22,7 @@ const introdata = {
         // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
     },
     description: "Asociación de Ciberseguridad",
-    your_img_url: "src/fondo.png",
+    your_img_url: fondo,
 };
 
 const dataabout = {
