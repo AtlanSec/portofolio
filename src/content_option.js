@@ -105,6 +105,7 @@ const contactConfig = {
 const socialprofils = {
     discord: "https://discord.gg/B2jvvyfvqm",
     telegram: "https://t.me/Atlansec",
+    gitbook: "https://wiki.atlansec.es",
 };
 export {
     meta,
