@@ -2,7 +2,7 @@
     top: 50%;
     left: 50px;
     width: 40px;
-    height: 300px;
+    height: 200px;
     position: fixed;
     margin-top: -150px;
 }
@@ -11,21 +11,27 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    position: relative; /* Add this for better alignment */
-    top: 50%; /* Center relative to its container */
-    transform: translateY(-50%); /* Center relative to its container */
+    position: relative;
+    /* Add this for better alignment */
+    top: 50%;
+    /* Center relative to its container */
+    transform: translateY(-50%);
+    /* Center relative to its container */
 }
 
 .stick_follow_icon svg {
-    width: 2em;
-    height: 2em;
+    width: 1.9em;
+    height: 1.9em;
     fill: var(--text-color);
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
+    /* Center horizontally */
 }
 
 .stick_follow_icon p {
-    top: 50%; /* Center relative to its container */
-    left: -106px; /* Adjusted to better align with icons */
+    top: 50%;
+    /* Center relative to its container */
+    left: -106px;
+    /* Adjusted to better align with icons */
     width: 105px;
     height: 30px;
     color: var(--text-color);
@@ -34,9 +40,12 @@
     line-height: 1.4;
     white-space: nowrap;
     position: relative;
-    transform: rotate(-90deg) translateY(70%); /* Adjusted for vertical centering */
-    transform-origin: right center; /* Adjusted rotation point */
+    transform: rotate(-90deg) translateY(70%);
+    /* Adjusted for vertical centering */
+    transform-origin: right center;
+    /* Adjusted rotation point */
 }
+
 
 .stick_follow_icon ul li {
     display: block;
@@ -55,38 +64,56 @@
     display: block;
     position: absolute;
     background-color: var(--text-color);
-    transform: translateY(-50%); /* Centered the line vertically */
+    transform: translateY(-50%);
+    /* Centered the line vertically */
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
     .stick_follow_icon {
         width: unset;
         height: unset;
         position: static;
         margin-top: unset;
-        display: flex;
+        display:grid;
         flex-direction: row-reverse;
         justify-content: center;
         padding: 60px 0;
         align-items: center;
     }
+
+    .stick_follow_icon svg {
+        width: 1.5em;
+        /* Adjusted size */
+        height: 1.3em;
+        /* Adjusted size */
+        fill: var(--text-color);
+        margin: 0 auto;
+        /* Center horizontally */
+    }
+
     .stick_follow_icon p {
-        top: 50%; /* Center relative to its container */
-        left: -106px; /* Adjusted to better align with icons */
-        width: 105px;
+        top: 50%;
+        /* Center relative to its container */
+        left: 0;
+        /* Adjusted to better align with icons */
+        width: 10px;
         height: 30px;
         color: var(--text-color);
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 600;
         line-height: 1.4;
         white-space: nowrap;
         position: relative;
-        transform: translateY(-80%); /* Adjusted for vertical centering */
-        transform-origin: right center; /* Adjusted rotation point */
+        transform: translateY(-80%);
+        /* Adjusted for vertical centering */
+        transform-origin: right center;
+        /* Adjusted rotation point */
     }
+
     .stick_follow_icon ul {
         margin-bottom: 40px;
     }
+
     .stick_follow_icon ul li {
         display: inline;
         margin-bottom: 44px;
